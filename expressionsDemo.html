@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Expressions Demo</title>
+    <script src="lib/angular.min.js" type="text/javascript"/></script>
+</head>
+<body>
+<div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'};quantity=1;cost=5;firstName='John';lastName='Doe';points=[1,15,19,2,40]">
+first name: <input type="text" ng-model="person.firstName"/></br>
+last name: <input type="text" ng-model="person.lastName"/></br>
+quantity: <input type="text" ng-model="quantity"/></br>
+cost: <input type="text" ng-model="cost"/></br>
+ 	<p>My first expression: {{ 5 + 5 }}</p>
+ 	<h1>Total in dollar: {{ quantity * cost }}</h1>
+ 	<p>The name of the person is {{ person.firstName + " " + person.lastName }}</p>
+ 	<p>The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+ 	<p>The third result is <span ng-bind="points[2]"></span></p>
+</div>
+
+</body>
+</html>

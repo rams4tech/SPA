@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Controller Basics</title>
+    <script src="lib/angular.min.js" type="text/javascript"/></script>
+</head>
+<body>
+<!--<div ng-app="myApp1" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp1', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "ramesh";
+    $scope.lastName= "s";
+});
+</script>-->
+    <div ng-app="myApp2" ng-controller="personCtrl">
+
+        First Name: <input type="text" ng-model="firstName"><br>
+        Last Name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name: {{fullName()}}
+
+    </div>
+
+<script src="personController.js"></script>
+
+
+</body>
+</html>

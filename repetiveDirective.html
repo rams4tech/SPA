@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repetive Directive Demo</title>
+    <script src="lib/angular.min.js" type="text/javascript"/></script>
+</head>
+<body>
+<body ng-app="">
+add text:Name:<input type="text" ng-model="textName"/>
+<div ng-init="names=['Jani','Hege','Kai'];country_names=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+  <p>Looping with ng-repeat:</p>
+  <ul>
+    <li ng-repeat="name in names">
+      {{ name }}
+    </li>
+    <li>{{textName}}</li>
+    <li ng-repeat="country_name	in country_names">
+    {{ country_name.name + ', ' + country_name.country }}
+  </li>
+  </ul>
+</div>
+
+</body>
+</html>
